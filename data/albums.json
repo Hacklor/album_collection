@@ -1,0 +1,28 @@
+[
+  {
+    "id": "1",
+    "name": "The Power Within",
+    "artist": "Dragonforce",
+    "year": 2012
+  },{
+    "id": "2",
+    "name": "Stones Grow Her Name",
+    "artist": "Sonata Arctica",
+    "year": 2012
+  },{
+    "id": "3",
+    "name": "The New Black",
+    "artist": "Strapping Young Lad",
+    "year": 2006
+  },{
+    "id": "4",
+    "name": "Icon",
+    "artist": "Rush",
+    "year": 2010
+  },{
+    "id": "5",
+    "name": "Killers",
+    "artist": "Iron Maiden",
+    "year": 1981
+  }
+]
