@@ -1,7 +1,7 @@
+require 'json'
 require 'services/album_service'
 
-
 get '/albums' do
-  @service ||= AlbumService.new
-  @service.find_all
+  albums = AlbumService.new.find_all
+  albums.to_json
 end
