@@ -13,6 +13,7 @@ end
 #
 # Add a few albums to the database
 #
+require 'persistence/persistence_factory'
 albums_persistence = PersistenceFactory.get(:albums)
 albums_persistence.add( { id: 1, name: "The Power Within", artist: "Dragonforce", year: 2012 } )
 albums_persistence.add( { id: 2, name: "Stones Grow Her Name", artist: "Sonata Arctica", year: 2012 } )

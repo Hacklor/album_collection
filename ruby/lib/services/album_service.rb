@@ -1,4 +1,4 @@
-require 'persistence/album_persistence'
+require 'persistence/persistence_factory'
 
 class AlbumService
 

@@ -1,3 +1,5 @@
+require 'persistence/album_persistence'
+
 class PersistenceFactory
 
   def self.get(name)
