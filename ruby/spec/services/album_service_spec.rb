@@ -6,7 +6,7 @@ describe AlbumService do
 
     it 'delegates to album persistence' do
       persistence = double
-      album_service.new(persistence)
+      album_service = AlbumService.new(persistence)
       expect(persistence).to receive(:find_all)
 
       album_service.find_all
