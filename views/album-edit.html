@@ -1,0 +1,10 @@
+<h2>Edit album</h2>
+<form ng-submit="submit()" ng-controller="AlbumEditController" novalidate class="simple-form">
+  Album name: <input type="text" ng-model="album.name" /><br />
+  Artist: <input type="text" ng-model="album.artist" /><br />
+  Year: <input type="text" ng-model="album.year" /><br />
+  <input type="submit" value="Save" />
+</form>
+<div class="well well-sm">
+  {{ album | json }}
+</div>

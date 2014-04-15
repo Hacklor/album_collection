@@ -1,0 +1,26 @@
+<table class="table">
+  <p>
+    Total number of albums: {{albums.length}}
+  </p>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Album name</th>
+      <th>Artist</th>
+      <th>Year</th>
+      <th />
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="album in albums | orderBy: orderProp">
+      <td>{{album.id}}</td>
+      <td>{{album.name}}</td>
+      <td>{{album.artist}}</td>
+      <td>{{album.year}}</td>
+      <td><a href="#/albums/{{album.id}}">Edit</a></td>
+    </tr>
+  </tbody>
+</table>
+<div class="well well-sm">
+  {{ albums | json }}
+</div>
