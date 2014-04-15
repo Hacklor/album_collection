@@ -6,10 +6,10 @@ describe AlbumService do
 
     it 'delegates to album persistence' do
       persistence = double
-      expect(AlbumPersistence).to receive(:new).and_return(persistence)
+      album_service.new(persistence)
       expect(persistence).to receive(:find_all)
 
-      subject.find_all
+      album_service.find_all
     end
 
   end
