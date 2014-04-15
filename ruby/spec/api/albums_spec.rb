@@ -8,7 +8,7 @@ describe "Albums" do
     AlbumService.stub(:new).and_return(service)
   end
 
-  context '/albums' do
+  context 'GET /albums' do
 
     it 'delegates to service' do
       expect(service).to receive(:find_all)
@@ -32,6 +32,15 @@ describe "Albums" do
       expect(last_response.body).to eq('[{"id":1,"name":"Stones Grow Her Name","artist":"Sonata Arctica","year":2012}]')
     end
 
+  end
+
+  context "POST /album" do
+
+    it 'responds with ok' do
+      post '/album'
+
+      expect(last_response).to be_ok
+    end
   end
 
 end
